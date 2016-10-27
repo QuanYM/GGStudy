@@ -1,0 +1,11 @@
+php 
+	1 JSON
+		//
+		$arr['code']=0;
+		$arr['str']='數據錯誤，請重試！！<br> Data error, please try again('. __LINE__.')!! <br> ';
+		throw new Exception(json_encode($arr));
+		//
+		var jsonObj = eval("(" + Str + ")");// 更好的方案
+		var err_code = jsonObj.code;
+		var err_str = jsonObj.str;
+	2 
